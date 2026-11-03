@@ -5,7 +5,9 @@
     "ipp",
     "inl",
     "tpp",
-    "tcc"
+    "tcc",
+    "ixx",
+    "cppm"
   ],
   "patterns": [
     {

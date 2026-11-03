@@ -10,7 +10,7 @@ Modern C/C++ development companion for [Orca](https://useorca.com/), adding rich
 
 ## Features
 
-### 1. C++ Inline & Template Definitions (`.ipp`, `.inl`, `.tpp`, `.tcc`)
+### 1. C++ Inline & Template Definitions (`.ipp`, `.inl`, `.tpp`, `.tcc`, `.ixx`)
 - Syntax highlighting for separated C++ template implementations and inline headers.
 - Full support for C++20/23 keywords: `concept`, `requires`, `consteval`, `constexpr`, `co_await`, `co_yield`, `co_return`, `decltype`, `noexcept`.
 - Operator overload definitions (`operator[]`, `operator+`, `operator<<`, etc.).
