@@ -8,10 +8,25 @@
 
 #include <cmath>
 #include <concepts>
+#include <cstddef>
 #include <stdexcept>
 #include <type_traits>
 
 namespace math {
+
+// Declaration of Vector class template
+template <typename T, std::size_t N>
+    requires std::is_arithmetic_v<T>
+class Vector {
+    T data_[N];
+public:
+    constexpr Vector() noexcept;
+    constexpr Vector(const T (&values)[N]) noexcept;
+    constexpr auto operator[](std::size_t index) noexcept -> T&;
+    constexpr auto operator[](std::size_t index) const noexcept -> const T&;
+    constexpr auto dot(const Vector<T, N>& other) const noexcept -> T;
+    auto magnitude() const -> double;
+};
 
 template <typename T, std::size_t N>
     requires std::is_arithmetic_v<T>

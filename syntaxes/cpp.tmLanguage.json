@@ -4,7 +4,8 @@
   "fileTypes": [
     "ipp",
     "inl",
-    "tpp"
+    "tpp",
+    "tcc"
   ],
   "patterns": [
     {
@@ -27,6 +28,9 @@
     },
     {
       "include": "#control-keywords"
+    },
+    {
+      "include": "#operator-overload"
     },
     {
       "include": "#operator-keywords"
@@ -159,11 +163,26 @@
         }
       ]
     },
+    "operator-overload": {
+      "patterns": [
+        {
+          "match": "\\b(operator)\\s*(\\[\\]|\\(\\)|[-+*/%^&|~!=<>]=?|<<=?|>>=?|->\\*?|&&|\\|\\||\\+\\+|--|co_await|[a-zA-Z_][a-zA-Z0-9_]*)",
+          "captures": {
+            "1": {
+              "name": "keyword.operator.cpp"
+            },
+            "2": {
+              "name": "entity.name.function.operator.cpp"
+            }
+          }
+        }
+      ]
+    },
     "operator-keywords": {
       "patterns": [
         {
           "name": "keyword.operator.cpp",
-          "match": "\\b(?:new|delete|sizeof|alignof|alignas|typeid|static_cast|dynamic_cast|const_cast|reinterpret_cast|static_assert)\\b"
+          "match": "\\b(?:operator|new|delete|sizeof|alignof|alignas|typeid|static_cast|dynamic_cast|const_cast|reinterpret_cast|static_assert)\\b"
         }
       ]
     },
@@ -187,7 +206,7 @@
       "patterns": [
         {
           "name": "storage.type.standard.cpp",
-          "match": "\\b(?:size_t|ptrdiff_t|intptr_t|uintptr_t|[u]?int(?:8|16|32|64)_t|byte|string|string_view|vector|array|deque|list|forward_list|map|unordered_map|set|unordered_set|multimap|multiset|tuple|pair|optional|variant|any|span|unique_ptr|shared_ptr|weak_ptr|function)\\b"
+          "match": "\\b(?:std|size_t|ptrdiff_t|intptr_t|uintptr_t|[u]?int(?:8|16|32|64)_t|byte|string|string_view|vector|array|deque|list|forward_list|map|unordered_map|set|unordered_set|multimap|multiset|tuple|pair|optional|variant|any|span|unique_ptr|shared_ptr|weak_ptr|function|is_arithmetic(?:_v)?|is_same(?:_v)?|is_base_of(?:_v)?|decay(?:_t)?|remove_cvref(?:_t)?|enable_if(?:_t)?)\\b"
         }
       ]
     },

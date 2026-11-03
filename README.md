@@ -8,13 +8,14 @@ Modern C/C++ development companion for [Orca](https://useorca.com/), adding rich
 
 ---
 
-## ⚡ Features
+## Features
 
 ### 1. C++ Inline & Template Definitions (`.ipp`, `.inl`, `.tpp`, `.tcc`)
 - Syntax highlighting for separated C++ template implementations and inline headers.
 - Full support for C++20/23 keywords: `concept`, `requires`, `consteval`, `constexpr`, `co_await`, `co_yield`, `co_return`, `decltype`, `noexcept`.
+- Operator overload definitions (`operator[]`, `operator+`, `operator<<`, etc.).
 - Nested template angle brackets `<...>`, type parameters (`typename`, `class`), and variable templates.
-- Standard namespace symbols (`std::`, `chrono`, `filesystem`, `views`, `ranges`).
+- Standard namespace symbols (`std::`, `chrono`, `filesystem`, `views`, `ranges`, type traits).
 
 ### 2. CMake Build System (`CMakeLists.txt`, `*.cmake`, `CMakeCache.txt`)
 - Built-in commands (`project`, `add_executable`, `add_library`, `target_link_libraries`, `find_package`, `FetchContent_*`).
@@ -24,7 +25,7 @@ Modern C/C++ development companion for [Orca](https://useorca.com/), adding rich
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### Method 1: In Orca Settings (Recommended)
 1. Open Orca and go to **Settings** (`Ctrl+,`) → **Plugins**.
@@ -47,6 +48,6 @@ git clone https://github.com/be0hhh/orca-cpp-kit.git "%APPDATA%\orca\plugins\be0
 
 ---
 
-## 📄 License
+## License
 
 MIT © [be0hhh](https://github.com/be0hhh)
