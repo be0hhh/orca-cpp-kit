@@ -4,6 +4,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Orca Plugin](https://img.shields.io/badge/Orca-Plugin-orange.svg)](https://onorca.dev/)
 
+<p align="center">
+  <img src="assets/cover.jpg" alt="C/C++ & CMake Kit Cover" width="100%">
+</p>
+
 Modern C/C++ development companion for [Orca](https://useorca.com/), adding rich syntax highlighting for C++ inline and template definitions, plus full CMake language support.
 
 ---
