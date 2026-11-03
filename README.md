@@ -39,10 +39,10 @@ Modern C/C++ development companion for [Orca](https://useorca.com/), adding rich
 Clone directly into your Orca plugins directory:
 ```sh
 # Linux / macOS
-git clone https://github.com/be0hhh/orca-cpp-kit.git ~/.orca/plugins/be0hhh.orca-cpp-kit
+git clone https://github.com/be0hhh/orca-cpp-kit.git ~/.orca/plugins/be0hhh.cpp-kit
 
 # Windows
-git clone https://github.com/be0hhh/orca-cpp-kit.git "%APPDATA%\orca\plugins\be0hhh.orca-cpp-kit"
+git clone https://github.com/be0hhh/orca-cpp-kit.git "%APPDATA%\orca\plugins\be0hhh.cpp-kit"
 ```
 
 ---
