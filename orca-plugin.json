@@ -1,0 +1,44 @@
+{
+  "manifestVersion": 2,
+  "id": "orca-cpp-kit",
+  "publisher": "be0hhh",
+  "name": "C/C++ & CMake Kit",
+  "version": "1.0.0",
+  "execution": "data",
+  "description": "Modern C/C++ support including inline/template headers (.ipp, .inl, .tpp, .tcc) and full CMake language syntax highlighting.",
+  "license": "MIT",
+  "repository": "https://github.com/be0hhh/orca-cpp-kit",
+  "engines": {
+    "orca": ">=1.4.248"
+  },
+  "contributes": {
+    "syntaxes": [
+      {
+        "id": "cpp-inlines",
+        "title": "C++ Inlines & Templates",
+        "extensions": [
+          ".ipp",
+          ".inl",
+          ".tpp",
+          ".tcc"
+        ],
+        "grammar": "syntaxes/cpp.tmLanguage.json",
+        "configuration": "syntaxes/cpp-configuration.json"
+      },
+      {
+        "id": "cmake",
+        "title": "CMake",
+        "extensions": [
+          ".cmake"
+        ],
+        "filenames": [
+          "CMakeLists.txt",
+          "CMakeCache.txt"
+        ],
+        "grammar": "syntaxes/cmake.tmLanguage.json",
+        "configuration": "syntaxes/cmake-configuration.json"
+      }
+    ]
+  },
+  "capabilities": []
+}
