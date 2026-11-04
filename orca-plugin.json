@@ -3,7 +3,7 @@
   "id": "cpp-kit",
   "publisher": "be0hhh",
   "name": "C/C++ & CMake Kit",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "execution": "data",
   "description": "C++ inline/template and module syntax with native-style colors, CMake scripts, and CMake cache highlighting.",
   "cover": {

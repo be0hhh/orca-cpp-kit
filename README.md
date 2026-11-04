@@ -39,6 +39,8 @@ Examples are in [samples](samples). `example.cmake` is a runnable script (`cmake
 
 ## Development
 
+Use a regular installed copy for everyday editing. Development folders watch source changes and can reload open editors; unload them before checking a release.
+
 ```sh
 npm ci
 npm test
