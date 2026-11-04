@@ -1,0 +1,7 @@
+# Example cache entries; this is data, not a CMake script.
+//Build configuration
+CMAKE_BUILD_TYPE:STRING=Release
+//Enable the demonstration
+DEMO_ENABLED:BOOL=ON
+DEMO_PATH:PATH=/opt/demo
+DEMO_INTERNAL:INTERNAL=stored-value

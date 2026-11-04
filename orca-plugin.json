@@ -3,12 +3,12 @@
   "id": "cpp-kit",
   "publisher": "be0hhh",
   "name": "C/C++ & CMake Kit",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "execution": "data",
-  "description": "Modern C/C++ support including inline/template headers (.ipp, .inl, .tpp, .tcc, .ixx) and full CMake language syntax highlighting.",
+  "description": "C++ inline/template and module syntax with native-style colors, CMake scripts, and CMake cache highlighting.",
   "cover": {
-    "path": "assets/cover.jpg",
-    "alt": "C/C++ & CMake Kit"
+    "path": "assets/cover.png",
+    "alt": "C++ template implementation highlighted in Orca"
   },
   "license": "MIT",
   "repository": "https://github.com/be0hhh/orca-cpp-kit",
@@ -43,9 +43,39 @@
           ".cmake"
         ],
         "filenames": [
-          "CMakeLists.txt",
+          "CMakeLists.txt"
+        ]
+      },
+      {
+        "id": "cmake-cache",
+        "title": "CMake Cache",
+        "scopeName": "source.cmake-cache",
+        "path": "syntaxes/cmake-cache.tmLanguage.json",
+        "configuration": "syntaxes/cmake-configuration.json",
+        "extensions": [],
+        "filenames": [
           "CMakeCache.txt"
         ]
+      }
+    ],
+    "newFiles": [
+      {
+        "id": "cpp-example",
+        "title": "C++ template example",
+        "extension": ".ipp",
+        "template": "samples/math_vector.ipp"
+      },
+      {
+        "id": "module-example",
+        "title": "C++ module example",
+        "extension": ".cppm",
+        "template": "samples/example.cppm"
+      },
+      {
+        "id": "cmake-example",
+        "title": "CMake script example",
+        "extension": ".cmake",
+        "template": "samples/example.cmake"
       }
     ]
   },

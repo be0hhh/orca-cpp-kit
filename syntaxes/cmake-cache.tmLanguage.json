@@ -1,0 +1,30 @@
+{
+  "name": "CMake Cache",
+  "scopeName": "source.cmake-cache",
+  "patterns": [
+    {
+      "name": "comment.line.cmake-cache",
+      "match": "^(?://|#).*$"
+    },
+    {
+      "match": "^([^:=]+)(:)([A-Z_]+)(=)(.*)$",
+      "captures": {
+        "1": {
+          "name": "variable.other.cmake-cache"
+        },
+        "2": {
+          "name": "punctuation.separator.cmake-cache"
+        },
+        "3": {
+          "name": "storage.type.cmake-cache"
+        },
+        "4": {
+          "name": "punctuation.separator.cmake-cache"
+        },
+        "5": {
+          "name": "string.unquoted.cmake-cache"
+        }
+      }
+    }
+  ]
+}

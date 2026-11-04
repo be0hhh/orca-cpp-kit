@@ -3,14 +3,30 @@
   "name": "CMake",
   "scopeName": "source.cmake",
   "patterns": [
-    { "include": "#comments" },
-    { "include": "#strings" },
-    { "include": "#variables" },
-    { "include": "#generator_expressions" },
-    { "include": "#commands" },
-    { "include": "#arguments" },
-    { "include": "#constants" },
-    { "include": "#numbers" }
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#variables"
+    },
+    {
+      "include": "#generator_expressions"
+    },
+    {
+      "include": "#commands"
+    },
+    {
+      "include": "#arguments"
+    },
+    {
+      "include": "#constants"
+    },
+    {
+      "include": "#numbers"
+    }
   ],
   "repository": {
     "comments": {
@@ -37,8 +53,12 @@
               "name": "constant.character.escape.cmake",
               "match": "\\\\([\"\\\\nrt$]|.)"
             },
-            { "include": "#variables" },
-            { "include": "#generator_expressions" }
+            {
+              "include": "#variables"
+            },
+            {
+              "include": "#generator_expressions"
+            }
           ]
         },
         {
@@ -52,11 +72,13 @@
       "patterns": [
         {
           "name": "variable.other.readwrite.cmake",
-          "match": "\\$([A-Za-z_][A-Za-z0-9_]*)?\\{([A-Za-z0-9_\\-\\./\\+]+)\\}",
-          "captures": {
-            "1": { "name": "storage.modifier.cmake" },
-            "2": { "name": "variable.name.cmake" }
-          }
+          "begin": "\\$(?:ENV|CACHE)?\\{",
+          "end": "\\}",
+          "patterns": [
+            {
+              "include": "#variables"
+            }
+          ]
         }
       ]
     },
@@ -67,9 +89,15 @@
           "begin": "\\$<",
           "end": ">",
           "patterns": [
-            { "include": "#variables" },
-            { "include": "#generator_expressions" },
-            { "include": "#strings" }
+            {
+              "include": "#variables"
+            },
+            {
+              "include": "#generator_expressions"
+            },
+            {
+              "include": "#strings"
+            }
           ]
         }
       ]
