@@ -7,8 +7,8 @@
   "execution": "data",
   "description": "C++ inline/template and module syntax with native-style colors, CMake scripts, and CMake cache highlighting.",
   "cover": {
-    "path": "assets/cover.png",
-    "alt": "C++ template implementation highlighted in Orca"
+    "path": "assets/cover.jpg",
+    "alt": "C/C++ & CMake Kit"
   },
   "license": "MIT",
   "repository": "https://github.com/be0hhh/orca-cpp-kit",

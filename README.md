@@ -3,7 +3,7 @@
 [![Release](https://img.shields.io/github/v/release/be0hhh/orca-cpp-kit?color=blue&label=release)](https://github.com/be0hhh/orca-cpp-kit/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-![C/C++ & CMake Kit](assets/cover.png)
+![C/C++ & CMake Kit](assets/cover.jpg)
 
 Syntax highlighting for C++ implementation headers, C++ module units, CMake scripts, and CMake cache files. This is a content-only plugin: it adds TextMate grammars and editor settings, with no background process or compiler integration.
 
